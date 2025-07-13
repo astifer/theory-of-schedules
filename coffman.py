@@ -1,9 +1,10 @@
 from collections import defaultdict, deque
 import heapq
+from typing import List
 
 from common import Task, get_graph
 
-def coffman_graham(tasks: list[Task], precedence, m=2):
+def coffman_graham(tasks: List[Task], precedence, m=2):
     """
     Реализация алгоритма Coffman-Graham.
     tasks: dict[int, Task] — задачи

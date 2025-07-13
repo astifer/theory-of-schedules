@@ -1,7 +1,7 @@
 from common import Task, get_graph
+from typing import Dict, List
 
-
-def gabow_scc(succ: dict[int, set[int]]) -> list[list[int]]:
+def gabow_scc(succ: Dict[int, set[int]]) -> List[List[int]]:
     index = 0
     visited = set()
     stack = []

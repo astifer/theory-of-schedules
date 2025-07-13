@@ -6,6 +6,7 @@
 
 ![alt text](image.png)
 
+## Алгоритмы 
 
 ### Coffman
 
@@ -30,3 +31,18 @@
 Находит циклы и сильно связные компоненты в графе зависимостей за линейное время.
 
 [code](gabow.py)
+
+
+## Api
+
+```
+uvicorn api:app --reload
+```
+
+Docs and Swagger will be available on http://127.0.0.1:8000/docs
+
+
+## Dependencies
+
+python3.11 + [reqs](requirements.txt)
+

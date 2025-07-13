@@ -1,6 +1,7 @@
 from common import Task, get_graph
+from typing import List, Dict
 
-def sethi_ulman_schedule(succ: dict[int, set[int]], pred: dict[int, set[int]]) -> list[int]:
+def sethi_ulman_schedule(succ: Dict[int, set[int]], pred: Dict[int, set[int]]) -> List[int]:
     # Кэш для подсчёта register need
     reg_need_cache = {}
 
