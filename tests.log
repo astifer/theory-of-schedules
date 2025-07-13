@@ -1,0 +1,12 @@
+>> /opt/homebrew/bin/python3 /Users/artem.pereverzev/reps/theory-of-schedules/main.py
+
+test_simple_schedule (tests.test_coffman.TestCoffmanGraham.test_simple_schedule) ... ok
+test_basic (tests.test_fujii.TestFujiiScheduler.test_basic) ... ok
+test_topological_order (tests.test_sethi.TestSethiUllman.test_topological_order) ... ok
+test_acyclic (tests.test_gabow.TestGabowSCC.test_acyclic) ... ok
+test_scc_detection (tests.test_gabow.TestGabowSCC.test_scc_detection) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

@@ -12,7 +12,10 @@ def coffman_graham(tasks: list[Task], precedence, m=2):
     """
     
     succ, pred = get_graph(precedence)
-    
+    for t in tasks:
+        succ.setdefault(t, set())
+        pred.setdefault(t, set())
+        
     # dычисляем топологическую сортировку с присвоением меток
     def compute_labels():
         in_degree = {t: len(pred[t]) for t in tasks}

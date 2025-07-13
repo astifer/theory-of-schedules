@@ -20,8 +20,12 @@ def fujii_scheduler(tasks, precedence, m=2):
 
     successors, predecessors = get_graph(precedence)
 
+    for t in tasks.values():
+        successors.setdefault(t.id, set())
+        predecessors.setdefault(t.id, set())
+
     # Задачи без предшественников
-    available = set(t.id for t in tasks.values() if not predecessors[t.id])
+    available = {t.id for t in tasks.values() if not predecessors.get(t.id, set())}
 
     while len(finished) < len(tasks):
         # Обновим время

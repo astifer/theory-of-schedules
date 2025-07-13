@@ -29,7 +29,7 @@ def sethi_ulman_schedule(succ: dict[int, set[int]], pred: dict[int, set[int]]) -
         leaves.sort(key=register_need)
         chosen = leaves[0]
 
-        schedule.insert(0, chosen)  # добавляем в начало — инверсное построение
+        schedule.append(chosen)
         remaining.remove(chosen)
 
     return schedule
