@@ -1,12 +1,32 @@
 >> /opt/homebrew/bin/python3 /Users/artem.pereverzev/reps/theory-of-schedules/main.py
 
+test_complex_graph (tests.test_coffman.TestCoffmanGraham.test_complex_graph) ... ok
+test_long_chain (tests.test_coffman.TestCoffmanGraham.test_long_chain) ... ok
+test_no_dependencies (tests.test_coffman.TestCoffmanGraham.test_no_dependencies) ... ok
 test_simple_schedule (tests.test_coffman.TestCoffmanGraham.test_simple_schedule) ... ok
-test_basic (tests.test_fujii.TestFujiiScheduler.test_basic) ... ok
-test_topological_order (tests.test_sethi.TestSethiUllman.test_topological_order) ... ok
+test_basic_dependency (tests.test_fujii.TestFujiiScheduler.test_basic_dependency)
+Простой граф с зависимостями: ... ok
+test_chain_parallel (tests.test_fujii.TestFujiiScheduler.test_chain_parallel)
+Простая цепочка 1→2→3→4→5 с двухмашинным параллелизмом. ... ok
+test_complex_structure (tests.test_fujii.TestFujiiScheduler.test_complex_structure)
+Сложный граф без строгих makespan-проверок: ... ok
+test_no_dependencies_concurrency (tests.test_fujii.TestFujiiScheduler.test_no_dependencies_concurrency)
+Без зависимостей. Проверяем, что одновременно ... ok
+test_complex_dag (tests.test_sethi.TestSethiUllman.test_complex_dag) ... ok
+test_cycle_detection (tests.test_sethi.TestSethiUllman.test_cycle_detection) ... ok
+test_diamond (tests.test_sethi.TestSethiUllman.test_diamond) ... ok
+test_long_chain (tests.test_sethi.TestSethiUllman.test_long_chain)
+Длинная цепочка из 20 узлов: 1→2→3→...→20 ... ok
+test_parallel_leaves (tests.test_sethi.TestSethiUllman.test_parallel_leaves) ... ok
+test_simple_chain (tests.test_sethi.TestSethiUllman.test_simple_chain) ... ok
+test_single_node (tests.test_sethi.TestSethiUllman.test_single_node) ... ok
 test_acyclic (tests.test_gabow.TestGabowSCC.test_acyclic) ... ok
+test_large_cycle (tests.test_gabow.TestGabowSCC.test_large_cycle) ... ok
+test_multiple_scc (tests.test_gabow.TestGabowSCC.test_multiple_scc) ... ok
 test_scc_detection (tests.test_gabow.TestGabowSCC.test_scc_detection) ... ok
+test_single_node_self_loop (tests.test_gabow.TestGabowSCC.test_single_node_self_loop) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.000s
+Ran 20 tests in 0.001s
 
 OK
